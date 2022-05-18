@@ -33,17 +33,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="district.html">Districts</a>
               </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> -->
+              
               <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li>
@@ -55,46 +45,48 @@
           </div>
         </div>
       </nav>
-      
-    
-      
-      
-      
-  </div>
-      <form >
+                   </div>
+      <form action="index.html" onsubmit="return validate()">
          <div class="allign">
-        <div class="col-lg-4">
+        <div class="col-lg-10">
         <div class="mb-3">
             <h1>Sign in to your Account</h1>
-            <label for="exampleInputEmail1" class="form-label">Name</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="form-text" class="form-text"></div>
+            <label for="exampleInputName1" class="form-label">User Name</label>
+            <input type="text"  placeholder="Enter Name" class="form-control" id="exampleInputName1"required >
+                       <div id="form-text" class="form-text"></div>
           </div>
-        <div class="mb-3">
+            <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="email"   placeholder="Enter Email Id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"required>
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
-          
+          <div class="mb-3">
+            <label for="exampleInputPhone1" class="form-label">Phone Number</label>
+            <input type="text"   placeholder="Enter Phone number" class="form-control" id="exampleInputPhone1"required >
+          </div>
+          <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
             <a href="#">forget your password?</a>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password"  placeholder="Enter Password" class="form-control" id="exampleInputPassword1"required>
           </div>
        
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <input type="checkbox" class="form-check-input" id="exampleCheck1"required>
+          <label class="form-check-label" for="exampleCheck1">  Agree to terms and conditions</label>
+        </div>
+        <div id="invalidCheck3Feedback" class="invalid-feedback">
+          You must agree before submitting.
         </div>
         <button type="submit" class="btn btn-primary">Sign In</button>
         
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label"></label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+       
         <div id="emailHelp" class="form-text">New User?<a href="signup.html">Create an account</a></div>
       </div>
     </div>
     </div>
   </form>
+  <script src="loginform.js"></script>
       </body>
 </html>

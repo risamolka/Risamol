@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>KeralaTourism</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-</head>
+    <head>
+        <title>KeralaTourism</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css"> 
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+     
+    </head>
 <body background="Images/backg.jpg">
-    <header>
-        <img src="Images/logo.png" alt="logo">
-
-        <div class="HeadTab">
-            <a href="#">Home</a>
-            <a href="loginpage.html">Login</a>
-            <a href="signup.html">Sign Up</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="district.html">Districts Kerala</a>
-        </div>
-    </header>
   
-<!---Login form--->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+      <img id="logo" src="Images/logo.png" alt="logo"> 
+     
+      <h3>  <img  src="Images/phone.jfif" alt="logo" > Contact us : 9998876543 </h3>
+     
+      <h3>  <img   src="Images/mail.jfif" alt="logo"> Email  :qwerty@gmail.com</h3>
+        </div>
+      </nav>
+      
+    </header>
+       
+     
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">KeralaTourism</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="loginpage.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="signup.html">signup</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="district.html">Districts</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                 
+                </form>
+              </div>
+            </div>
+          </nav>
+    
+    
+<!-- -Login form-
 <form action="loginpage.html"class="Login">
     <h2>User Login</h2>
     <br>
@@ -41,13 +85,13 @@
     <a href="signup.html"> Sign Up </a>
 </div>
 
-</form>
+</form> -->
 
 <!---/Login form--->
 
  <!---Aside--->
  <div class="sidebar">
-    <h1>Lets Explore Kerala!!<br><br></h1>
+    <h1>Lets Explore Kerala!!<br></h1>
     <ul>
      <li>Kerala, a state situated on the tropical Malabar Coast of southwestern India.<br></li>
          <li>It is one of the most popular tourist destinations in the country.<br></li>
@@ -57,29 +101,24 @@
     </div>
      <!---/Aside--->
      <div class="District">
-        <h3>District</h3><br>
+        <h3>Districts</h3><br>
         <img src="Images/distr.jfif">
-         <ol>
-             <li> <a href="kasargod.html">Kasaragod</a></li>
-             <li><a href="kannur.html">Kannur</a></li>
-             <li><a href="wayanad.html">Wayanad</a></li>
-             <li><a href="kozhikode.html">Kozhikode</a></li>
-             <li><a href="malappuram.html">Malappuram</a></li>
-             <li><a href="palakkad.html">Palakkad</a></li>
-             <li><a href="Thrissur.html">Thrissur</a></li>
-             <li><a href="Ernakulam.html">Ernakulam</a></li>
-             <li><a href="idukki.html">Idukki</a></li>
-             <li><a href="kottayam.html">Kottayam</a></li>
-             <li><a href="alappuzha.html">Alappuzha</a></li>
-             <li><a href="pathanamthitta.html">Pathanamthitta</a></li>
-             <li><a href="kollam.html">Kollam</a></li>
-             <li><a href="Thiruvanandapuram.html">Thiruvananthapuram</a></li>
-
-
-         </ol>
-       
-
-    </div>
+         
+              <a href="kasargod.html">Kasaragod</a><br>
+             <a href="kannur.html">Kannur</a><br>
+             <a href="wayanad.html">Wayanad</a><br>
+             <a href="kozhikode.html">Kozhikode</a><br>
+             <a href="malappuram.html">Malappuram</a><br>
+             <a href="palakkad.html">Palakkad</a><br>
+             <a href="Thrissur.html">Thrissur</a><br>
+             <a href="Ernakulam.html">Ernakulam</a><br>
+             <a href="idukki.html">Idukki</a><br>
+             <a href="kottayam.html">Kottayam</a><br>
+             <a href="alappuzha.html">Alappuzha</a><br>
+             <a href="pathanamthitta.html">Pathanamthitta</a><br>
+             <a href="kollam.html">Kollam</a><br>
+             <a href="Thiruvanandapuram.html">Thiruvananthapuram</a><br>
+                    </div>
     
 <footer>
     <h3>Copyright@2022</h3>

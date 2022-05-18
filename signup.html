@@ -30,17 +30,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="district.html">Districts</a>
               </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> -->
+           
               <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li>
@@ -55,45 +45,67 @@
       <div>
       </div>
       <div class="allign">
-      <div class="col-lg-4">
-      <form >
+      <div class="col-lg-10">
+      <form action="index.html" onsubmit="return validate()">
         <div>
         <h1>New Account</h1>
         <h6>Have an Account?<a href="loginpage.html">Login</a></h6><br>
         <div class="mb-3">
-          <label for="exampleInputUsername" class="form-label">User Name</label>
-          <input type="name" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp">
+          <label for="exampleInputName1" class="form-label">User Name</label>
+          <input type="text"  placeholder="Enter Name" class="form-control" id="exampleInputName1"required >
+                     <div id="form-text" class="form-text"></div>
         </div>
-        <p>The password must have at least 8 characters,at least 1 digit(s),at least 1 lower case letter(s),
-           at least 1 upper case letter(s), at least 1  non-alphanumeric character(s) such as as *, -, or #</p>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="exampleInputPhone1" class="form-label">Phone Number</label>
+          <input type="text" placeholder="Enter Phone number" class="form-control" id="exampleInputPhone1" required>
+          <div id="form-text" class="form-text"></div>
         </div>
-        <h5>More details</h5><br>
+        <div class="pass">
+        <p>The password must have at least 8 characters,at least 1 digit(s),at least 1 lower case letter(s),
+          at least 1 upper case letter(s), at least 1  non-alphanumeric character(s) such as as *, -, or #</p>
+            <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input  type="password" placeholder="Enter Password" class="form-control" id="exampleInputPassword1" onkeyup="passval()" required>
+          <!-- <label for="check" id="check" onclick="passval()">check</label> -->
+          <br>  <div class="progress">
+            <div id="progress-bar" 
+                 role="progressbar" 
+                 aria-valuenow="0"
+                 aria-valuemin="0" 
+                 aria-valuemax="100"
+                 style="width:0%">
+            </div>
+        </div>
+          <p id="msg"></p>
+        </div>
+        </div>
+                 <h5>More details</h5><br>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="email"   placeholder="Enter Email Id"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"required>
         </div>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email(again)</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="email" placeholder="Enter Email Id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"required>
         </div>
         <div class="mb-3">
           <label for="exampleInputName" class="form-label">First Name</label>
-          <input type="Name" class="form-control" id="exampleInputName">
+          <input type="Name" placeholder="Enter Name" class="form-control" id="exampleInputName"required>
         </div>
         <div class="mb-3">
           <label for="exampleInputCity" class="form-label">City/Town</label>
-          <input type="City" class="form-control" id="exampleInputCity">
+          <input type="City"placeholder="Enter city" class="form-control" id="exampleInputCity"required>
         </div>
         <div class="mb-3">
           <label for="exampleInputCountry" class="form-label">Country</label>
-          <input type="Country" class="form-control" id="exampleInputCountry">
+          <input type="Country" placeholder="Enter Country" class="form-control" id="exampleInputCountry"required>
         </div>
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+          <label class="form-check-label" for="exampleCheck1"> Agree to terms and conditions</label>
+        </div>
+        <div id="invalidCheck3Feedback" class="invalid-feedback">
+          You must agree before submitting.
         </div>
         <button type="submit" class="btn btn-primary">Sign Up</button>
         <button type="submit" class="btn btn-primary">cancel</button>
@@ -101,5 +113,6 @@
       </form>
       </div>
       </div>
+      <script src="signin.js"></script>
       </body>
 </html>
